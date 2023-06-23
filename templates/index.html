@@ -1,0 +1,18 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greeting App</title>
+  </head>
+  <body>
+    <h1>Greeting App</h1>
+    <form method="POST" action="/">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <button type="submit">Submit</button>
+    </form>
+    {% if greeting %}
+      <h2>{{ greeting }}</h2>
+    {% endif %}
+  </body>
+</html>
